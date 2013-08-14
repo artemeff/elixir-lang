@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+
+  <title>{{ page.title }}</title>
+
+  <link rel="shortcut icon" href="/static/favicon.png">
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!--html5 enabler-->
+  <script type="text/javascript">
+  ;("header footer section aside nav article figure figcaption hgroup time").replace(/\w+/g,function(a){document.createElement(a)})
+  </script>
+</head>
+<body>
+
+  <div class="container">
+    <header class="clearfix">
+      <a href="http://elixir-lang.ru/" class="logo">
+        <img src="/static/logo.png" alt="{{ site.name }}" title="{{ site.name }}">
+      </a>
+      <nav>
+        <a href="/about.html">Об Elixir</a>
+        <a href="/getting_started/index.html">Первые шаги</a>
+        <a href="http://elixir-lang.org/docs/stable/">Документация</a>
+        <a href="http://elixir-lang.org/">Оф. сайт</a>
+      </nav>
+    </header>
+
+    <article>
+      {{ content }}
+    </article>
+
+    <footer>
+      &copy; 2013 <a href="http://artemeff.com">artemeff</a>, <a href="http://github.com/artemeff/elixir-lang">sources</a>
+    </footer>
+  </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-27383670-2', 'elixir-lang.ru');
+    ga('send', 'pageview');
+  </script>
+
+</body>
+</html>

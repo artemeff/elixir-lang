@@ -1,0 +1,14 @@
+---
+layout: default
+title: Elixir
+---
+
+{% for post in site.posts %}
+  {% if forloop.first %}
+    <h1>{{ post.title }}</h1>
+    {{ post.content }}
+    <hr>
+  {% else %}
+    <span>{{ post.date | date: "%d.%m.%Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a><br>
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,130 @@
+/* Base styles
+   ----------- */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+a,
+a:visited {
+  color: #4e2a8e;
+  text-decoration: underline;
+}
+
+a.spec,
+a.spec:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+pre {
+  font-family: Monaco, monospace, Courier, "Courier New";
+  line-height: 1.7em;
+  font-size: 0.7em;
+  background: #fff8ed;
+  border: 1px solid #f6e4cc;
+  padding: 10px 15px;
+  margin-bottom: 1.7em;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+hr {
+  height: 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Utilities
+   ----------- */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}
+
+/* Grid
+   ----------- */
+
+.container {
+  width: 800px; /* 640 */
+  margin: 0 auto;
+}
+
+/* Header
+   ----------- */
+
+header {
+  margin: 20px 0 0;
+}
+
+header .logo {
+  float: left;
+  width: 230px;
+}
+
+header nav {
+  float: left;
+  width: 570px;
+  margin: 45px 0 0;
+  text-align: right;
+}
+
+header nav a {
+  margin: 0 10px;
+}
+
+/* Content
+   ----------- */
+
+article {
+  margin: 40px 0;
+}
+
+/* Footer
+   ----------- */
+
+footer {
+  font-size: 0.8em;
+}
+
+footer,
+footer a,
+footer a:hover,
+footer a:visited {
+  color: #999;
+}
