@@ -1,9 +1,5 @@
 ## [elixir-lang.ru](http://elixir-lang.ru/)
 
-Russian community platform for Elixir language
-
----
-
 ### Contributing
 
 1. Fork it
