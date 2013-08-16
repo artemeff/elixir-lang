@@ -1,4 +1,6 @@
-## [elixir-lang.ru](http://elixir-lang.ru/)
+### [elixir-lang.ru](http://elixir-lang.ru/)
+
+---
 
 ### Contributing
 
