@@ -115,6 +115,11 @@ article {
   margin: 40px 0;
 }
 
+article .date {
+  float: right;
+  color: #aaa;
+}
+
 /* Footer
    ----------- */
 
