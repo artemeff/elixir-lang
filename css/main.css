@@ -68,7 +68,7 @@ hr {
    ----------- */
 
 .container {
-  width: 800px; /* 640 */
+  width: 980px;
   margin: 0 auto;
 }
 
@@ -81,14 +81,12 @@ header {
 
 header .logo {
   float: left;
-  width: 230px;
+  width: 250px;
 }
 
 header nav {
   float: left;
-  width: 570px;
   margin: 45px 0 0;
-  text-align: right;
 }
 
 header nav a {
