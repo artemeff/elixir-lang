@@ -98,8 +98,15 @@ header nav a {
 /* Content
    ----------- */
 
-article {
+#content {
   margin: 40px 0;
+}
+
+/* Articles
+   ----------- */
+
+article {
+  margin-bottom: 40px;
 }
 
 article .date {
