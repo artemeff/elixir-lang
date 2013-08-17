@@ -3,7 +3,6 @@ layout: post
 title:  "Welcome to Elixir!"
 
 author: "Yuri Artemev"
-email:  "i@artemeff.com"
 web:    "http://artemeff.com"
 ---
 
