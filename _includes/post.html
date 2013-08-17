@@ -1,5 +1,10 @@
 <article>
   <span class="date">{{ include.post.date | date: "%d.%m.%Y" }}</span>
+  <span class="author">
+    <a href="{{ include.post.web }}" title="автор: {{ include.post.author }}">
+      <img src="{{ include.post.email | to_gravatar }}" alt="{{ include.post.author }}">
+    </a>
+  </span>
 
   {% if include.single %}
     <h2>{{ include.post.title }}</h2>
@@ -7,5 +12,13 @@
     <h2><a href="{{ post.url }}">{{ include.post.title }}</a></h2>
   {% endif %}
 
-  {{ include.post.content }}
+  {% if include.single %}
+    {{ content }}
+  {% else %}
+    {{ include.post.content | to_preview }}
+  {% endif %}
+
+  {% unless include.single %}
+    <a href="{{ post.url }}">Читать дальше...</a>
+  {% endunless %}
 </article>

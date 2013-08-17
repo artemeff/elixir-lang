@@ -2,6 +2,12 @@
 layout: default
 ---
 
-{% include post.html post=page single=true %}
+<section id="content">
+  {% include post.html post=page single=true %}
 
-{% include comments.html %}
+  {% include comments.html %}
+</section>
+
+<aside>
+  {% include sidebar.html %}
+</aside>

@@ -3,10 +3,16 @@ layout: default
 title: Elixir
 ---
 
-{% for post in site.posts %}
-  {% if forloop.first %}
-    {% include post.html post=post single=false %}
-  {% else %}
-    <span>{{ post.date | date: "%d.%m.%Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a><br>
-  {% endif %}
-{% endfor %}
+<section id="content">
+  {% for post in site.posts %}
+    {% if forloop.first %}
+      {% include post.html post=post single=false %}
+    {% else %}
+      <span>{{ post.date | date: "%d.%m.%Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a><br>
+    {% endif %}
+  {% endfor %}
+</section>
+
+<aside>
+  {% include sidebar.html %}
+</aside>

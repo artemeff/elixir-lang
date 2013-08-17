@@ -37,6 +37,10 @@ a:active {
   outline: 0;
 }
 
+h2 a {
+  text-decoration: none;
+}
+
 hr {
   height: 0;
   border: none;
@@ -72,6 +76,10 @@ hr {
   margin: 0 auto;
 }
 
+#main {
+  margin: 40px 0;
+}
+
 /* Header
    ----------- */
 
@@ -97,7 +105,17 @@ header nav a {
    ----------- */
 
 #content {
-  margin: 40px 0;
+  width: 700px;
+  float: left;
+}
+
+/* Sidebar
+   ----------- */
+
+aside {
+  width: 250px;
+  float: left;
+  padding-left: 30px;
 }
 
 /* Articles
@@ -110,6 +128,18 @@ article {
 article .date {
   float: right;
   color: #aaa;
+}
+
+article .author {
+  float: left;
+}
+
+article .author img {
+  border-radius: 24px;
+}
+
+article h2 {
+  padding-left: 35px;
 }
 
 /* Footer
