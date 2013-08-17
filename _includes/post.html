@@ -1,0 +1,11 @@
+<article>
+  <span class="date">{{ include.post.date | date: "%d.%m.%Y" }}</span>
+
+  {% if include.single %}
+    <h2>{{ include.post.title }}</h2>
+  {% else %}
+    <h2><a href="{{ post.url }}">{{ include.post.title }}</a></h2>
+  {% endif %}
+
+  {{ include.post.content }}
+</article>

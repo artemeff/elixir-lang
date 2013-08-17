@@ -5,10 +5,7 @@ title: Elixir
 
 {% for post in site.posts %}
   {% if forloop.first %}
-    <span class="date">{{ post.date | date: "%d.%m.%Y" }}</span>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    {{ post.content }}
-    <hr>
+    {% include post.html post=post single=false %}
   {% else %}
     <span>{{ post.date | date: "%d.%m.%Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a><br>
   {% endif %}

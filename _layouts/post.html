@@ -2,11 +2,6 @@
 layout: default
 ---
 
-<span class="date">{{ page.date | date: "%d.%m.%Y" }}</span>
-<h2>{{ page.title }}</h2>
-
-<div class="post">
-  {{ content }}
-</div>
+{% include post.html post=page single=true %}
 
 {% include comments.html %}
