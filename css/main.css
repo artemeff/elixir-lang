@@ -94,11 +94,13 @@ header .logo {
 
 header nav {
   float: left;
-  margin: 45px 0 0;
+  margin: 45px 0 0 20px;
+  cursor: default;
 }
 
 header nav a {
   margin: 0 10px;
+  text-decoration: none;
 }
 
 /* Content
@@ -147,6 +149,7 @@ article h2 {
 
 footer {
   font-size: 0.8em;
+  cursor: default;
 }
 
 footer,
