@@ -1,3 +1,16 @@
+pre {
+  font-family: Monaco, monospace, Courier, "Courier New";
+  line-height: 1.7em;
+  font-size: 0.7em;
+  background: #fff8ed;
+  border: 1px solid #f6e4cc;
+  padding: 10px 15px;
+  margin-bottom: 1.7em;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
