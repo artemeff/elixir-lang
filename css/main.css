@@ -7,9 +7,9 @@ html {
 
 body {
   color: #555;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 1em;
-  line-height: 1.7em;
+  line-height: 1.6em;
 }
 
 a,
@@ -45,6 +45,10 @@ hr {
   height: 0;
   border: none;
   border-bottom: 1px solid #ccc;
+}
+
+ul {
+  padding-left: 20px;
 }
 
 /* Utilities
@@ -125,6 +129,7 @@ aside {
 
 article {
   margin-bottom: 40px;
+  text-align: justify;
 }
 
 article .meta {
