@@ -4,19 +4,19 @@
     {{ include.post.date | date: "%d.%m.%Y" }}
   </span>
 
-  {% if include.single %}
-    <h2>{{ include.post.title }}</h2>
-  {% else %}
+  {% if include.preview %}
     <h2><a href="{{ post.url }}">{{ include.post.title }}</a></h2>
-  {% endif %}
-
-  {% if include.single %}
-    {{ content }}
   {% else %}
-    {{ include.post.excerpt }}
+    <h2>{{ include.post.title }}</h2>
   {% endif %}
 
-  {% unless include.single %}
+  {% if include.preview %}
+    {{ include.post.excerpt }}
+  {% else %}
+    {{ content }}
+  {% endif %}
+
+  {% if include.preview %}
     <a href="{{ post.url }}">Читать дальше...</a>
-  {% endunless %}
+  {% endif %}
 </article>
