@@ -5,10 +5,16 @@ pre {
   background: #fff8ed;
   border: 1px solid #f6e4cc;
   padding: 10px 15px;
-  margin-bottom: 1.7em;
+  margin: 1em 0;
   overflow: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+code {
+  background: #fff8ed;
+  color: #555;
+  padding: 0 3px;
 }
 
 .highlight  { background: #ffffff; }
