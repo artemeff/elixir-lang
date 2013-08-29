@@ -135,7 +135,7 @@ serve_drinks User.get("John")
 
 ---
 
-## Erlang на пути вниз
+## Erlang all the way down
 
 После всего этого, Elixir остается Erlang'ом. Программист на Elixir может вызывать любые функции Erlang без потерей в производительности:
 
