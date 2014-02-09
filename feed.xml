@@ -1,0 +1,32 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>Elixir</title>
+  <link href="http://elixir-lang.ru/"/>
+  <link type="application/atom+xml" rel="self" href="http://elixir-lang.ru/feed.xml"/>
+  <updated>{{ site.posts.first.date | date_to_xmlschema }}</updated>
+  <id>http://elixir-lang.ru/</id>
+  <author>
+    <name>Yuri Artemev</name>
+    <email>i@artemeff.com</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>http://elixir-lang.ru{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://elixir-lang.ru{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>{{ post.author }}</name>
+      <uri>{{ post.web }}</uri>
+    </author>
+    <content type="html">{{ post.excerpt | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+ 
+</feed>
